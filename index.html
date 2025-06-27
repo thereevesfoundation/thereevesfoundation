@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Reeves Foundation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0b0b2d;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1a1a3d;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d') no-repeat center center/cover;
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0b0b2d;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #d4af37;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #0b0b2d;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Reeves Foundation</h1>
+    <p>Restoring Hope, One Life at a Time</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Our Work</a>
+    <a href="#get-involved">Get Involved</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Support for Displaced Families & Children</h1>
+      <p>Together, we bring light to the darkest places.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About the Foundation</h2>
+    <p>
+      Founded by actor Keanu Reeves, The Reeves Foundation is a private humanitarian initiative focused on supporting displaced children and families affected by war. Our mission is to restore dignity, safety, and opportunity to those forced from their homes by conflict.
+    </p>
+  </section>
+
+  <section id="work">
+    <h2>Our Work</h2>
+    <p>
+      We work quietly and efficiently to deliver aid, build infrastructure, and provide emotional and logistical support to families in crisis. Our foundation is currently in its private launch phase with trusted internal donors and a clear, purposeful structure.
+    </p>
+  </section>
+
+  <section id="get-involved">
+    <h2>Get Involved</h2>
+    <p>
+      You can make a difference. Whether you want to volunteer, donate, or help us spread awareness, there’s a place for you in this mission. We also welcome compassionate Virtual Assistants and field partners to join our team.
+    </p>
+    <a href="#contact" class="cta-button">Join the Mission</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <strong>support@keanureeves.space</strong></p>
+    <p>Telegram:
+<strong>https://t.me/thereevesfoundation</p>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Reeves Foundation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
